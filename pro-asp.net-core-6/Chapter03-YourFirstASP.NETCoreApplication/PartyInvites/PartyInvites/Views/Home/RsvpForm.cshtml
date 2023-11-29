@@ -1,0 +1,46 @@
+﻿@* @model chỉ định rằng chế độ xem mong muốn nhận được đối tượng GuestResponse làm models view của nó *@
+@model PartyInvites.Models.GuestResponse;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RsvpForm</title>
+</head>
+<body>
+    @* asp-action được sử dụng để xác định tên của action method trong một controller mà form
+    sẽ gửi đến khi người dùng thực hiện hành động (submit) form.
+    asp-action="RsvpForm": Xác định rằng khi form này được gửi đi, nó sẽ gửi yêu cầu đến action method có tên là "RsvpForm" trong controller tương ứng.
+    method="post": Xác định rằng form này sẽ sử dụng phương thức HTTP POST để gửi dữ liệu đến server.
+    Khi người dùng nhấn nút "Submit" trên form, form sẽ gửi yêu cầu đến action method "RsvpForm" trong controller tương ứng (được xác định thông qua route) để xử lý dữ liệu được nhập và thực hiện các hành động cần thiết.
+    Điều này giúp xác định nơi dữ liệu của form sẽ được gửi và xử lý trên phía server, liên kết với action method cụ thể mà bạn muốn xử lý yêu cầu.
+    *@
+
+    <form asp-action="RsvpForm" method="post">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Name">Your name:</label>
+            <input asp-for="Name" />
+        </div>
+        <div>
+            <label asp-for="Email">Your Email</label>
+            <input asp-for="Email" />
+        </div>
+        <div>
+            <label asp-for="Phone">Your Phone</label>
+            <input asp-for="Phone" />
+        </div>
+        <div>
+            <label asp-for="WillAttend">Will you attend</label>
+            <select asp-for="WillAttend">
+                <option value="">Choose an option</option>
+                <option value="true">Yes, I'll be there'</option>
+                <option value="false">No, I can't come</option>
+            </select>
+        </div>
+        <button type="submit">Submit RSVP</button>
+    </form>
+</body>
+</html>

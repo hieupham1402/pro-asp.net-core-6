@@ -1,0 +1,32 @@
+﻿@model IEnumerable<PartyInvites.Models.GuestResponse>//Đặt kiểu mô hình cho trang là
+@{
+    Layout = null; // Không sử dụng layout cho trang này.
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Responses</title>
+</head>
+<body>
+    <h2>Here is the list of people attending the party</h2> 
+    <!-- Hiển thị tiêu đề cho danh sách khách mời tham dự -->
+    <table>
+        <thead>
+            <!-- Đầu bảng hiển thị các cột thông tin -->
+            <tr><th>Name</th><th>Email</th><th>Phone</th></tr> 
+        </thead>
+        <tbody>
+            <!-- Lặp qua danh sách khách mời và hiển thị thông tin của mỗi khách mời -->
+            @foreach (PartyInvites.Models.GuestResponse r in Model!) 
+            {
+                <tr>
+                    <td>@r.Name</td> <!-- Hiển thị tên khách mời -->
+                    <td>@r.Email</td> <!-- Hiển thị email khách mời -->
+                    <td>@r.Phone</td> <!-- Hiển thị số điện thoại khách mời -->
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

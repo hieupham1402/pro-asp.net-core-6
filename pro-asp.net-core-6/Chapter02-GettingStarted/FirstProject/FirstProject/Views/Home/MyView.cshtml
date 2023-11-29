@@ -1,0 +1,40 @@
+﻿@* @{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        Hello World (from the view)
+    </div>
+</body>
+</html>
+The new contents of the view file are mostly HTML. The exception is the part that looks like this:
+...
+@{
+    Layout = null;
+}
+... *@
+
+@* Listing 2-10 *@
+@model string
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @* @Model sẽ lấy giá trị từ HomeController là viewModel *@
+        @Model World (from the view)
+    </div>
+</body>
+</html>
