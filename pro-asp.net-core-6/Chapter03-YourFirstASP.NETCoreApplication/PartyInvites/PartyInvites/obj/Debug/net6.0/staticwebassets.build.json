@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jPBbVOmPLk5eEJp/KaM/A/YpI7htk/gVcrrXszfUgRs=",
+  "Hash": "Kwi7bgiZ+jXOxMIcyskvYWEry+tYnIGh7oe2NFUkyXY=",
   "Source": "PartyInvites",
   "BasePath": "_content/PartyInvites",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "E:\\Learn_Code\\ASP.NET Core\\ASP.NET Core 6\\pro-asp.net-core-6\\Chapter03-YourFirstASP.NETCoreApplication\\PartyInvites\\PartyInvites\\wwwroot\\css\\style.css",
+      "SourceId": "PartyInvites",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Learn_Code\\ASP.NET Core\\ASP.NET Core 6\\pro-asp.net-core-6\\Chapter03-YourFirstASP.NETCoreApplication\\PartyInvites\\PartyInvites\\wwwroot\\",
+      "BasePath": "_content/PartyInvites",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "E:\\Learn_Code\\ASP.NET Core\\ASP.NET Core 6\\pro-asp.net-core-6\\Chapter03-YourFirstASP.NETCoreApplication\\PartyInvites\\PartyInvites\\wwwroot\\favicon.ico",

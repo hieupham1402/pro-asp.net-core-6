@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "E:\\Learn_Code\\ASP.NET Core\\ASP.NET Core 6\\pro-asp.net-core-6\\Chapter03-YourFirstASP.NETCoreApplication\\PartyInvites\\PartyInvites\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "E:\\Learn_Code\\ASP.NET Core\\ASP.NET Core 6\\pro-asp.net-core-6\\Chapter03-YourFirstASP.NETCoreApplication\\PartyInvites\\PartyInvites\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
